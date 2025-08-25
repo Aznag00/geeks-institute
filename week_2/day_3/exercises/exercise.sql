@@ -1,4 +1,4 @@
---Exercise 1
+--Exercise 1:
 
 SELECT * FROM language ;
 SELECT f.title, f.description, l.name AS language_name FROM film f JOIN language l ON l.language_id = f.language_id;
@@ -31,7 +31,7 @@ DELETE FROM new_film WHERE id = 1;
 --All reviews linked to that film (film_id = 1) will be automatically deleted from customer_review
 
 
---Exercise 2
+--Exercise 2:
 
 UPDATE film
 SET language_id = 2 WHERE film_id IN (1, 2, 3);
