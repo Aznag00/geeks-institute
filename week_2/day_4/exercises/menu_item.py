@@ -4,7 +4,7 @@ connection = psycopg2.connect(
         host="localhost",
         database="restaurant",
         user="postgres",
-        password="nevergoback"  
+        password="postgres"  
     )
 cursor = connection.cursor()
 
