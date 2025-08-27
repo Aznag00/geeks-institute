@@ -30,43 +30,33 @@ class Product:
     @property
     def id(self):
         return self.__id
-
     @property
     def name(self):
         return self.__name
-
     @name.setter
     def name(self, name):
         self.__name = name
-
     @property
     def desc(self):
         return self.__desc
-
     @desc.setter
     def desc(self, desc):
         self.__desc = desc
-
     @property
     def img_url(self):
         return self.__img_url
-
     @img_url.setter
     def img_url(self, img_url):
         self.__img_url = img_url
-
     @property
     def price(self):
         return self.__price
-
     @price.setter
     def price(self, price):
         self.__price = price
-
     @property
     def category(self):
         return self.__category
-
     @category.setter
     def category(self, category):
         self.__category = category
@@ -128,8 +118,6 @@ def AddProduct():
         product_first_id += 1
 
     return jsonify(product.prod_dict())
-
-
 
 @app.route("/products/<int:product_id>", methods=["DELETE"])
 def DeleteItem(product_id):
