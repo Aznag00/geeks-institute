@@ -1,4 +1,3 @@
-/*
 // ===== Exercise 1
 const h1 = document.querySelector("h1");
 console.log(h1);
@@ -46,7 +45,7 @@ if (secondParagraph) {
     this.style.opacity = "1";
   });
 }
-*/
+
 // ===== Exercise 2
 
 const form = document.querySelector("form");
